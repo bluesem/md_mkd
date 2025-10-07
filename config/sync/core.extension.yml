@@ -12,17 +12,19 @@ module:
   config: 0
   contact: 0
   contextual: 0
+  core_event_dispatcher: 0
+  custom_article_tools: 0
   datetime: 0
   dblog: 0
   dynamic_page_cache: 0
   editor: 0
-  entity_events: 0
   field: 0
   field_ui: 0
   file: 0
   filter: 0
   help: 0
   history: 0
+  hook_event_dispatcher: 0
   image: 0
   link: 0
   menu_link_content: 0
@@ -41,6 +43,7 @@ module:
   toolbar: 0
   update: 0
   user: 0
+  views_event_dispatcher: 0
   views_ui: 0
   views: 10
   standard: 1000
