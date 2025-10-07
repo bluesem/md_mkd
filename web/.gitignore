@@ -45,3 +45,4 @@ modules/contrib
 themes/contrib
 profiles/contrib
 core
+/example.gitignore
