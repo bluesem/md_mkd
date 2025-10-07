@@ -4,6 +4,8 @@ services:
     class: 'Drupal\custom_article_tools\EventSubscriber\NodeArticleEventSubscriber'
     tags:
       - { name: 'event_subscriber'}
+    arguments:
+      - '@logger.factory'
 
   custom_article_tools.node_form_alter_subscriber:
     class: 'Drupal\custom_article_tools\EventSubscriber\NodeFormAlterEventSubscriber'
