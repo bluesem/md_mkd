@@ -3,3 +3,8 @@ type: module
 description: 'Handle article content type custom functionalities.'
 package: Custom
 core_version_requirement: ^10 || ^11
+
+dependecies:
+  - entity_events:entity_events
+  - views:views
+  - hook_event_dispatcher:core_event_dispatcher

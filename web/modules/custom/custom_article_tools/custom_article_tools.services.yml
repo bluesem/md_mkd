@@ -1,0 +1,16 @@
+services:
+
+  custom_article_tools.article_event_subscriber:
+    class: 'Drupal\custom_article_tools\EventSubscriber\NodeArticleEventSubscriber'
+    tags:
+      - { name: 'event_subscriber'}
+
+  custom_article_tools.node_form_alter_subscriber:
+    class: 'Drupal\custom_article_tools\EventSubscriber\NodeFormAlterEventSubscriber'
+    tags:
+      - { name: 'event_subscriber'}
+  
+  custom_article_tools.view_alter_subscriber:
+    class: 'Drupal\custom_article_tools\EventSubscriber\ViewAlterEventSubscriber'
+    tags:
+      - { name: 'event_subscriber'}
