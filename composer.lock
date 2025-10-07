@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c29269a9c8c37a1051ef4b51cc904623",
+    "content-hash": "4cc699be55611072a2dc158d9396dc70",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -1478,27 +1478,41 @@
             "time": "2025-10-02T07:24:02+00:00"
         },
         {
-            "name": "drupal/entity_events",
-            "version": "2.0.5",
+            "name": "drupal/hook_event_dispatcher",
+            "version": "4.2.0",
             "source": {
                 "type": "git",
-                "url": "https://git.drupalcode.org/project/entity_events.git",
-                "reference": "2.0.5"
+                "url": "https://git.drupalcode.org/project/hook_event_dispatcher.git",
+                "reference": "4.2.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_events-2.0.5.zip",
-                "reference": "2.0.5",
-                "shasum": "7ae4938688b334a110ee708591cce4bad21a3060"
+                "url": "https://ftp.drupal.org/files/projects/hook_event_dispatcher-4.2.0.zip",
+                "reference": "4.2.0",
+                "shasum": "8a3c2278778150bd2c61c15b1676a67d4fbc2a5b"
             },
             "require": {
-                "drupal/core": "^9 || ^10 || ^11"
+                "drupal/core": "^10.2 || ^11.0",
+                "php": ">=8.1.0"
+            },
+            "require-dev": {
+                "drupal/core_event_dispatcher": "*",
+                "drupal/paragraphs": "^1.10",
+                "drupal/tracer": "^1.0",
+                "drupal/webform": "^6.2",
+                "mglaman/phpstan-drupal": "^1.1",
+                "phpstan/extension-installer": "^1.1",
+                "phpstan/phpstan-deprecation-rules": "^1.0"
+            },
+            "suggest": {
+                "drupal/paragraphs": "Enables the creation of paragraphs entities.",
+                "drupal/token": "Provides additional tokens not supported by core (most notably fields), as well as a UI for browsing tokens."
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.5",
-                    "datestamp": "1750485631",
+                    "version": "4.2.0",
+                    "datestamp": "1727021695",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -1511,22 +1525,23 @@
             ],
             "authors": [
                 {
-                    "name": "a.dmitriiev",
-                    "homepage": "https://www.drupal.org/user/3235287"
+                    "name": "el7cosmos",
+                    "homepage": "https://www.drupal.org/user/251087"
                 },
                 {
-                    "name": "mattgill",
-                    "homepage": "https://www.drupal.org/user/3539361"
+                    "name": "pdenooijer",
+                    "homepage": "https://www.drupal.org/user/3175437"
                 },
                 {
-                    "name": "sheshsharma",
-                    "homepage": "https://www.drupal.org/user/3614527"
+                    "name": "robin.ingelbrecht",
+                    "homepage": "https://www.drupal.org/user/2339074"
                 }
             ],
-            "description": "Dispatches events on entity create, update, presave, predelete and delete.",
-            "homepage": "https://www.drupal.org/project/entity_events",
+            "description": "Dispatches events for several drupal core hooks.",
+            "homepage": "https://drupal.org/project/hook_event_dispatcher",
             "support": {
-                "source": "https://git.drupalcode.org/project/entity_events"
+                "source": "https://git.drupalcode.org/project/hook_event_dispatcher",
+                "issues": "https://drupal.org/project/issues/hook_event_dispatcher"
             }
         },
         {
