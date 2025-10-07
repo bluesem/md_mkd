@@ -8,3 +8,6 @@ dependecies:
   - entity_events:entity_events
   - views:views
   - hook_event_dispatcher:core_event_dispatcher
+  - hook_event_dispatcher:views_event_dispatcher
+  - drupal:rest
+  - drupal:serialization

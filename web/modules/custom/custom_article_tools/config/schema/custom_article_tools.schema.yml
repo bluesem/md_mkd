@@ -1,0 +1,32 @@
+est.resource.promoted_articles:
+  type: config_entity
+  label: 'Promoted articles REST resource'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    plugin_id:
+      type: string
+      label: 'Plugin ID'
+    granularity:
+      type: string
+      label: 'Granularity'
+    configuration:
+      type: mapping
+      label: 'Configuration'
+      mapping:
+        methods:
+          type: sequence
+          label: 'Allowed methods'
+          sequence:
+            type: string
+        formats:
+          type: sequence
+          label: 'Serialization formats'
+          sequence:
+            type: string
+        authentication:
+          type: sequence
+          label: 'Authentication providers'
+          sequence:
+            type: string

@@ -1,0 +1,15 @@
+langcode: en
+dependencies:
+  module:
+    - rest
+    - serialization
+id: promoted_articles
+plugin_id: promoted_articles
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie
