@@ -1,0 +1,20 @@
+uuid: 4353a883-2bfa-408c-8802-abcc4d9a6332
+langcode: en
+status: true
+dependencies:
+  module:
+    - custom_article_tools
+    - serialization
+    - user
+_core:
+  default_config_hash: 8tNbC8DV3uD-t9aLmrDKVyKP9RnNHKW3TBfhWmLUOM4
+id: promoted_articles
+plugin_id: promoted_articles
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie
