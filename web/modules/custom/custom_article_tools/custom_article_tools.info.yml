@@ -1,0 +1,5 @@
+name: 'custom_article_tools'
+type: module
+description: 'Handle article content type custom functionalities.'
+package: Custom
+core_version_requirement: ^10 || ^11
