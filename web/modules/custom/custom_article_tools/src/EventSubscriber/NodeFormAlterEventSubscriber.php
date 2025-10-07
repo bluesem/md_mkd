@@ -48,9 +48,10 @@ class NodeFormAlterEventSubscriber implements EventSubscriberInterface {
         '#title' => "Promoted to newsletter",
         '#default_value' => $node->get('field_promoted_to_newslet')->value ?? 0,
       ];
+
+        $form['actions']['submit']['#submit'][] = [self::class, 'savePromotedToNewsletterChoice'];
     }
 
-    $form['actions']['submit']['#submit'][] = [self::class, 'savePromotedToNewsletterChoice'];
   }
 
   /**
